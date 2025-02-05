@@ -1,0 +1,13 @@
+type Query {
+  hello: String!
+  user(id: ID!): User
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String
+}
+
+directive @deprecated(reason: String) on FIELD_DEFINITION
+directive @customDirective on FIELD_DEFINITION 

@@ -1,0 +1,8 @@
+{
+  "allowedDirectives": ["@skip", "@include", "@deprecated"],
+  "forbiddenScalars": ["DateTimeOffset", "Long"],
+  "replacementScalars": {
+    "DateTime": "String"
+  },
+  "stripSubscription": true
+} 

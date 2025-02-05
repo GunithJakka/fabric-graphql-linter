@@ -1,0 +1,33 @@
+{
+  "name": "fabric-graphql-linter",
+  "version": "1.0.0",
+  "description": "A linter for Microsoft Fabric GraphQL schemas",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/cli/index.ts",
+    "test": "jest",
+    "lint": "eslint 'src/**/*.ts' 'tests/**/*.ts'",
+    "test:watch": "jest --watch",
+    "dev": "ts-node-dev --respawn src/cli/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^11.0.0",
+    "graphql": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+} 
